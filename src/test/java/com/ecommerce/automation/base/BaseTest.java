@@ -3,14 +3,14 @@ package com.ecommerce.automation.base;
 import com.ecommerce.automation.config.ConfigManager;
 import com.ecommerce.automation.driver.DriverManager;
 import com.ecommerce.automation.utils.ScreenshotUtils;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 public class BaseTest {
-    private static final Logger log = (Logger) LoggerFactory.getLogger(BaseTest.class);
+    private static final Logger log = LoggerFactory.getLogger(BaseTest.class);
     protected final ConfigManager config = ConfigManager.getInstance();
 
     @BeforeSuite(alwaysRun = true)

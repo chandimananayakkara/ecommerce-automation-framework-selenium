@@ -1,7 +1,7 @@
 package com.ecommerce.automation.driver;
 
 import com.ecommerce.automation.config.ConfigManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BrowserOptions {
-    private static final Logger log = (Logger) LoggerFactory.getLogger(BrowserOptions.class);
+    private static final Logger log = LoggerFactory.getLogger(BrowserOptions.class);
     private static final ConfigManager config = ConfigManager.getInstance();
 
     private BrowserOptions() {

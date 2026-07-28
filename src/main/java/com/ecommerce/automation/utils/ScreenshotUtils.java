@@ -1,7 +1,7 @@
 package com.ecommerce.automation.utils;
 
 import com.ecommerce.automation.constants.AppConstants;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class ScreenshotUtils {
-    private static final Logger log = (Logger) LoggerFactory.getLogger(ScreenshotUtils.class);
+    private static final Logger log = LoggerFactory.getLogger(ScreenshotUtils.class);
     private static final DateTimeFormatter DATE_FORMAT =
             DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
 

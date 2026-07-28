@@ -1,7 +1,7 @@
 package com.ecommerce.automation.driver;
 
 import com.ecommerce.automation.constants.AppConstants;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.slf4j.LoggerFactory;
 
 public class DriverFactory {
-    private static final Logger log = (Logger) LoggerFactory.getLogger(DriverFactory.class);
+    private static final Logger log = LoggerFactory.getLogger(DriverFactory.class);
 
     private DriverFactory() {
     }
