@@ -1,6 +1,8 @@
 package com.ecommerce.automation.pages.common;
 
 import com.ecommerce.automation.pages.BasePage;
+import com.ecommerce.automation.pages.auth.LoginPage;
+import com.ecommerce.automation.pages.auth.RegisterPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
