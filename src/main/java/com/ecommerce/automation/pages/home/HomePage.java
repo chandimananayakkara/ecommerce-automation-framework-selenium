@@ -64,10 +64,8 @@ public class HomePage extends BasePage {
         try {
             waitForUrlContains("commerce.bagisto.com");
             boolean bannerVisible = isElementDisplayed(heroBanner);
-            log.info("🏠 HomePage loaded : ", bannerVisible);
             return bannerVisible;
         } catch (Exception e) {
-            log.warn("⚠️ Could not verify homepage load : ", e.getMessage());
             return driver.getCurrentUrl().contains("bagisto.com");
         }
     }
@@ -82,7 +80,6 @@ public class HomePage extends BasePage {
 
     public int getVisibleProductCount() {
         int count = productCards.size();
-        log.info("📦 Visible product cards : ", count);
         return count;
     }
 
@@ -99,7 +96,6 @@ public class HomePage extends BasePage {
     }
 
     public ProductPage clickProductByIndex(int index) {
-        log.info("🛍️ Clicking product at index : ", index);
         if (index >= productCards.size()) {
             throw new IndexOutOfBoundsException(
                     String.format("Index is out of bounds.",
@@ -117,7 +113,6 @@ public class HomePage extends BasePage {
     }
 
     public void subscribeNewsletter(String email) {
-        log.info("📧 Subscribing to newsletter with : ", email);
         if (isElementDisplayed(newsletterEmailInput)) {
             scrollToElement(newsletterEmailInput);
             type(newsletterEmailInput, email);

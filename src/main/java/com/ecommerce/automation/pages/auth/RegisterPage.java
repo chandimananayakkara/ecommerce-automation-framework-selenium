@@ -129,7 +129,6 @@ public class RegisterPage extends BasePage {
         scrollToElement(registerButton);
         click(registerButton);
     }
-
     public AccountPage registerWith(String firstName, String lastName,
                                     String email, String password,
                                     String confirmPassword) {
@@ -166,7 +165,6 @@ public class RegisterPage extends BasePage {
                                      String email, String password) {
         return registerWith(firstName, lastName, email, password, password);
     }
-
     public boolean isSuccessMessageDisplayed() {
         return isElementDisplayed(SUCCESS_MESSAGE);
     }

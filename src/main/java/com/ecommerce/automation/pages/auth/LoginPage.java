@@ -48,7 +48,6 @@ public class LoginPage extends BasePage {
 
     public LoginPage(WebDriver driver) {
         super(driver);
-        log.info("📄 LoginPage initialized ", driver.getCurrentUrl());
     }
 
     public boolean isLoginPageLoaded() {
@@ -102,7 +101,6 @@ public class LoginPage extends BasePage {
 
     public String getErrorMessageText() {
         String message = getText(ERROR_MESSAGE);
-        log.info("📢 Error message : ", message);
         return message;
     }
 

@@ -56,7 +56,6 @@ public class HeaderComponent extends BasePage {
     }
 
     public void searchFor(String keyword) {
-        log.info("🔍 Searching for : ", keyword);
         type(searchInput, keyword);
         pressEnter(searchInput);
     }
